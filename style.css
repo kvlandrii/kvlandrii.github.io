@@ -431,10 +431,12 @@ body {
 .contact_container{ 
     display: flex;
     margin: 75px 0;
+    flex-wrap: wrap;
 }
 
 .info_container{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact_info{
@@ -464,7 +466,6 @@ body {
 }
 
 .write_us{
-    margin: 0 0 0 145px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -584,10 +585,11 @@ body {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 320px)
+@media only screen and (max-width: 425px)
 {
+
     body{
-        width: 320px;
+        width: 100%;
         margin: 0;
     }
 
@@ -627,7 +629,8 @@ body {
     }
 
     .foto_slide{
-        width: 320px;
+        max-width: 425px;
+        width: 100%;
         height: auto;
     }
 
@@ -688,14 +691,8 @@ body {
         width: 20px;
         height: 200px;
         font-size: 10px;
-    }
+        border-radius: 5px;
 
-    .prev-btn {
-        border-radius: 0 5px 5px 0;
-    }
-
-    .next-btn {
-        border-radius: 5px 0 0 5px;
     }
 
     .prev-btn:hover,
@@ -775,7 +772,7 @@ body {
 
     .visit_btn{
         height: 50px;
-        width: 320px;
+        width: 100%;
         border-radius: 0px;
         margin: 20px 0; 
     }
@@ -806,7 +803,7 @@ body {
 
     .map_img{
         margin: 35px 0;
-        width: 300px;
+        width: 90%;
         height: auto;
         object-fit: scale-down;
     }
